@@ -4,16 +4,19 @@
 html {
     --color-main: #0FBA16;
     --color-sub: #E95819;
+    cursor: url(../images/none.png), auto;
 }
 
 body {
     font-family: 'Titillium Web', 'Noto Sans KR', sans-serif;
     background: #f8f8f8;
     color: #333;
+    cursor: url(../images/none.png), auto;
 }
 
 a {
     color: #333;
+    cursor: url(../images/select.png), auto;
 }
 
 /* header */
@@ -128,27 +131,40 @@ a {
     font-family: 'Noto Sans KR';
     color: #222;
     position: absolute;
-    left: -90px;
+    left: -50px;
     top: 220px;
+    transition: all 0.5s ease;
+}
+
+#home .p2:hover {
+    cursor: url(../images/select.png), auto;
+}
+
+#home .p2 span {
+    transition: all 0.6s ease;
+}
+
+#home .p2:hover span {
+    color: var(--color-sub);
 }
 
 #home .p1 {
-    animation: p1_ani 2s ease-out;
+    animation: p1_ani 2.5s ease;
 }
 
 @keyframes p1_ani {
     0% {
-        left: -190px;
+        left: -150px;
         opacity: 0;
     }
 
     50% {
-        left: -130px;
+        left: -100px;
         opacity: 0;
     }
 
     100% {
-        left: -90px;
+        left: -50px;
         opacity: 1;
     }
 }
@@ -159,7 +175,7 @@ a {
     left: 500px;
     top: 440px;
     word-break: keep-all;
-    animation: p2_ani 4s ease-out;
+    animation: p2_ani 2.8s ease;
 }
 
 @keyframes p2_ani {
@@ -221,7 +237,7 @@ a {
 
 #about .paper li {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #about .paper li:first-child {
@@ -270,6 +286,11 @@ a {
     margin-bottom: 10px;
     font-weight: 500;
     vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+#about .paper .info_right li .license li span {
+    font-size: 24px;
 }
 
 #about .paper .info_right>li:last-child {
@@ -286,6 +307,37 @@ a {
     width: 50px;
     vertical-align: middle;
     margin-right: 40px;
+}
+
+.skill img {
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.skill img:hover {
+    right: 5px;
+}
+
+#about .paper span.content {
+    color: #222;
+    opacity: 0.8;
+    position: relative;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+#about .paper span:hover {
+    opacity: 1;
+    right: 5px;
+}
+
+#about .paper .go a {
+    transition: all 0.3s ease;
+}
+
+#about .paper .go:hover a {
+    color: var(--color-main);
 }
 
 /* works */
@@ -473,6 +525,36 @@ a {
 
 #contact .info li {
     width: 250px;
+    padding: 20px 0;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+}
+
+#contact .info li:hover {
+    opacity: 1;
+    top: -8px;
+}
+
+#contact .info li a {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+#contact .info li a span {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+#contact .info li:hover a span {
+    opacity: 1;
 }
 
 #contact .info li img {
@@ -485,6 +567,11 @@ a {
     font-size: 26px;
     font-weight: 600;
     margin-top: 10px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+#contact .info li:hover p {
     color: var(--color-main);
 }
 

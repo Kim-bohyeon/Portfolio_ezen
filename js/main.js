@@ -61,23 +61,23 @@ $(function () {
 
 
     function move1() {
-        $('.one1').fadeOut(3000).fadeIn(5000);
+        $('.one1').fadeOut(2000).fadeIn(3000);
     }
 
     function move2() {
-        $('.one2').fadeOut(5000).fadeIn(4000);
+        $('.one2').fadeOut(4000).fadeIn(3000);
     }
 
     function move3() {
-        $('.one3').fadeOut(4000).fadeIn(6000);
+        $('.one3').fadeOut(3000).fadeIn(5000);
     }
 
     function move4() {
-        $('.one4').fadeOut(2000).fadeIn(3000);
+        $('.one4').fadeOut(1000).fadeIn(3000);
     }
 
     function move5() {
-        $('.one5').fadeOut(3000).fadeIn(3000);
+        $('.one5').fadeOut(2000).fadeIn(2000);
     }
 
     setInterval(move1, 200);
@@ -101,6 +101,13 @@ $(function () {
         txtImage: "작품" // title
 
     });
+
+
+
+
+
+
+
 
 
 });
